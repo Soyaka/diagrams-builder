@@ -1,5 +1,9 @@
+"use client"
+
+
 import React from "react";
 import Image from "next/image";
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
 export default function Header() {
   return (
     <header className="bg-black">
@@ -81,7 +85,7 @@ export default function Header() {
                 className="rounded-md bg-rose-600 px-5 py-2.5 text-sm font-medium text-white shadow"
                 href="#"
               >
-                Login
+                <LoginLink> Login</LoginLink>
               </a>
 
               <div className="hidden sm:flex">
@@ -89,7 +93,7 @@ export default function Header() {
                   className="rounded-md bg-blue-500 px-5 py-2.5 text-sm font-medium text-white"
                   href="#"
                 >
-                  Register
+                  <RegisterLink> Register</RegisterLink>
                 </a>
               </div>
             </div>
